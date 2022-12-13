@@ -1,0 +1,34 @@
+import { BigNumber } from 'ethers';
+import { FeeType, PositiveBigNumber } from '../../types';
+export interface FeeInputs {
+    protocolFees?: FeeType[];
+    royaltyFees: FeeType[];
+    makerFees: FeeType[];
+    takerFees: FeeType[];
+}
+export interface FeeBreakdownFromBasePriceInputs extends FeeInputs {
+    basePrice: BigNumber;
+}
+export interface FeeBreakdownFromFullPriceInputs extends FeeInputs {
+    priceWithFees: BigNumber;
+}
+export interface FeeBreakdown {
+    protocol: {
+        percentage: number;
+        amount: PositiveBigNumber;
+    };
+    royalty: {
+        percentage: number;
+        amount: PositiveBigNumber;
+    };
+    ecosystem: {
+        percentage: number;
+        amount: PositiveBigNumber;
+    };
+    totalFeePercentage: number;
+}
+export interface FeeBreakdownResult {
+    basePrice: PositiveBigNumber;
+    priceWithFees: PositiveBigNumber;
+    feeBreakdown: FeeBreakdown;
+}

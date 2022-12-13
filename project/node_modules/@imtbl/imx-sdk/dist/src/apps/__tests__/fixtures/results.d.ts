@@ -1,0 +1,3 @@
+import { ImmutableMethodResults } from '../../../types';
+export declare const mintableTokenResult: ImmutableMethodResults.ImmutableGetMintableTokenResult;
+export declare const currenciesResult: ImmutableMethodResults.ImmutableGetCurrenciesResult;

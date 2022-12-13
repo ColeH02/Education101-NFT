@@ -1,0 +1,2 @@
+import { JsonRpcProvider } from '@ethersproject/providers';
+export declare const getJsonRPCProvider: (rpcUrl: string) => Promise<JsonRpcProvider>;

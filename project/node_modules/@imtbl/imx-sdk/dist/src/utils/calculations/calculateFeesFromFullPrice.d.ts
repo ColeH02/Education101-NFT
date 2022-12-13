@@ -1,0 +1,2 @@
+import { FeeBreakdownFromFullPriceInputs, FeeBreakdownResult } from './feeBreakdown.models';
+export declare function calculateFeeBreakdownFromFullPrice({ priceWithFees, protocolFees, royaltyFees, makerFees, takerFees, }: FeeBreakdownFromFullPriceInputs): FeeBreakdownResult;

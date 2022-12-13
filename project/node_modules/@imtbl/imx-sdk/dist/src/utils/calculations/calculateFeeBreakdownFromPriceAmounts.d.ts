@@ -1,0 +1,12 @@
+import { BigNumber } from 'ethers';
+import { FeeBreakdownResult } from './feeBreakdown.models';
+export declare type FeeAmount = {
+    amount: BigNumber;
+};
+export interface FeeBreakdownFromPriceAmountsInputs {
+    priceWithFees: BigNumber;
+    protocolFeeAmounts: FeeAmount[];
+    royaltyFeeAmounts: FeeAmount[];
+    ecosystemFeeAmounts: FeeAmount[];
+}
+export declare function calculateFeeBreakdownFromPriceAmounts({ priceWithFees, protocolFeeAmounts, royaltyFeeAmounts, ecosystemFeeAmounts, }: FeeBreakdownFromPriceAmountsInputs): FeeBreakdownResult;
