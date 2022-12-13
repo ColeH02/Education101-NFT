@@ -1,0 +1,8 @@
+{
+    "name": "NFT 1",
+    "description": "NFT created to explore the future of schooling",
+    "image_url": "https://gateway.pinata.cloud/ipfs/Qmbr1xuRoV6r64d5g5nQY2Lc7DV39NonzxXSihovhRDB9o",
+    "attack": 123,
+    "collectable": true,
+    "class": "EnumValue1"
+}
